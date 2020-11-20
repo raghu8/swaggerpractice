@@ -21,9 +21,9 @@ public class ProfileController {
 	 * @ApiParam -->swagger.annotations.ApiParam
 	 */
 	@GetMapping(value = "/hello", produces = "application/json")
-	public Person profileDetails() {
-		person.setName("Raghu");
-		person.setAge(28);
+	public Person profileDetails(String name, int age) {
+		person.setName(name);
+		person.setAge(age);
 		person.setProfession("hb");
 		return person;
 	}
