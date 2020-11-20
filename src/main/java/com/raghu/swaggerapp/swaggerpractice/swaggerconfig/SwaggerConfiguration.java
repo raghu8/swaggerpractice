@@ -17,9 +17,9 @@ public class SwaggerConfiguration {
 	@Bean
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2).groupName("public-api").apiInfo(apiInfo()).select()
-				.paths(PathSelectors.ant("/hello*")).build();
+				.paths(PathSelectors.ant("/hello/{name}/{age}")).build();
 	}
-
+	//PathSelectors
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder().title("Swagger without the use of annotations")
 				.description("My First Swagger Description. Professional HB customer.")
