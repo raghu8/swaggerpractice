@@ -13,11 +13,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfiguration {
 
-	// Create an instance of Docket. Has all customizable properties that swagger
-	// will pick up
+
 	@Bean
 	public Docket api() {
-		// Step 1. Call select
 		return new Docket(DocumentationType.SWAGGER_2).groupName("public-api").apiInfo(apiInfo()).select()
 				.paths(PathSelectors.ant("/hello*")).build();
 	}
