@@ -4,3 +4,5 @@ Created a simple GET endpoint that will be documented by swagger. Next step is t
 the end points
 
 URL: http://localhost:8080/swagger-ui.html
+
+clone project and modify to accomadate for /hello/*
