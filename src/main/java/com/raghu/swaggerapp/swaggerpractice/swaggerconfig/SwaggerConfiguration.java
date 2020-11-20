@@ -23,9 +23,9 @@ public class SwaggerConfiguration {
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfoBuilder().title("Swagger without the use of annotations").description(
-				"My First Swagger Description. Professional HB customer.")
-				.termsOfServiceUrl("http://localhost:8080/swagger-ui.html").licenseUrl("a@b.com").version("1.0")
+		return new ApiInfoBuilder().title("Swagger without the use of annotations")
+				.description("My First Swagger Description. Professional HB customer.")
+				.termsOfServiceUrl("http://localhost:8080/swagger-ui.html").licenseUrl("hb@hb.com").version("1.0")
 				.build();
 	}
 
